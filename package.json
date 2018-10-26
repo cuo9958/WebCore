@@ -1,0 +1,32 @@
+{
+    "name": "webcore",
+    "version": "0.1.0",
+    "description": "nodejs的后端支持，多用途的数据存储引擎。",
+    "main": "index.js",
+    "scripts": {
+        "dev": "DEBUG=webcore* node index.js",
+        "test": "DEBUG=test nodemon test/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cuo9958/WebCore.git"
+    },
+    "keywords": [
+        "web",
+        "data",
+        "easySQL"
+    ],
+    "author": "疯狂紫萧",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/cuo9958/WebCore/issues"
+    },
+    "homepage": "https://github.com/cuo9958/WebCore#readme",
+    "devDependencies": {
+        "config": "^2.0.1",
+        "nodemon": "^1.18.5"
+    },
+    "dependencies": {
+        "debug": "^4.1.0"
+    }
+}

@@ -1,11 +1,11 @@
 {
     "name": "webcore",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "nodejs的后端支持，多用途的数据存储引擎。",
     "main": "index.js",
     "scripts": {
         "dev": "DEBUG=webcore* node index.js",
-        "test": "DEBUG=test nodemon test/index.js"
+        "test": "DEBUG=webcore* nodemon test/index.js"
     },
     "repository": {
         "type": "git",
@@ -27,6 +27,9 @@
         "nodemon": "^1.18.5"
     },
     "dependencies": {
-        "debug": "^4.1.0"
+        "@types/node": "^10.12.0",
+        "debug": "^4.1.0",
+        "mysql2": "^1.6.1",
+        "sequelize": "^4.41.0"
     }
 }

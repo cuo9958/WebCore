@@ -23,6 +23,12 @@ const def = {
                 min: 0, //最小连接数
                 idle: 10000
             },
+            define: {
+                charset: 'utf8',
+                dialectOptions: {
+                    collate: 'utf8_general_ci'
+                }
+            }
         },
     },
     env: process.env.NODE_ENV || "development",

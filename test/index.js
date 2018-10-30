@@ -6,16 +6,23 @@ const webcore = require("../index");
 
 webcore.Init();
 
-setTimeout(() => {
-
+async function test1() {
     //测试普通类型
     //创建对象，背后查询表是否存在
     let data1 = new webcore.Data.Object("test1");
 
     //是否需要new一个对象
-    data1.set("Title", "标题");
+    data1.set("title", "标题");
+    try {
+        data1.save();
 
-    data1.save();
+    } catch (error) {
+        console.log(error)
+    }
+
+}
+setTimeout(() => {
+    test1();
 
     // //查询类
     // let data2 = webcore.Data.query("test_data");
